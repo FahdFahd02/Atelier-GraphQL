@@ -29,9 +29,9 @@ public class InventoryServiceApplication {
 
             List<Video> videos = List.of(
                     Video.builder().name("Video 1").url("http://video.com/1").description("La premiere video")
-                            .datePublication(LocalDate.now()).creator(creators.get(0)).build(),
+                            .datePublication(String.valueOf(LocalDate.now())).creator(creators.get(0)).build(),
                     Video.builder().name("Video 2").url("http://video.com/2").description("La deuxieme video")
-                            .datePublication(LocalDate.now()).creator(creators.get(1)).build()
+                            .datePublication(String.valueOf(LocalDate.now())).creator(creators.get(1)).build()
             );
             videoRepository.saveAll(videos);
         };

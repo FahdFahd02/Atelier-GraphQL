@@ -17,7 +17,7 @@ public class Video {
     private String name;
     private String url;
     private String description;
-    private LocalDate datePublication;
+    private String datePublication;
 
     @ManyToOne
     private Creator creator;
@@ -26,7 +26,7 @@ public class Video {
 
     }
 
-    public Video(Long id, String name, String url, String description, LocalDate datePublication, Creator creator) {
+    public Video(Long id, String name, String url, String description, String datePublication, Creator creator) {
         this.id = id;
         this.name = name;
         this.url = url;

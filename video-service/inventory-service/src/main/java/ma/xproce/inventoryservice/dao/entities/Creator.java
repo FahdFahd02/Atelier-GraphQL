@@ -16,7 +16,7 @@ public class Creator {
     private String name;
     private String email;
 
-    @OneToMany(mappedBy = "creator")
+    @OneToMany(mappedBy = "creator", cascade = CascadeType.ALL)
     private List<Video> videos;
 
     public Creator() {
